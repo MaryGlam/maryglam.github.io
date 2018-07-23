@@ -1,0 +1,77 @@
+body {
+  font-family: "Playfair Display" Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+}
+
+nav {
+  text-align: center;
+  margin-top: 76px;
+}
+
+nav .main-menu-item {
+  display: inline-block;
+  margin-right: 87px;
+}
+
+.main-menu-list {
+  list-style: none;
+}
+
+.main-menu-list a {
+  text-decoration: none;
+  color: #626262;
+  text-transform: uppercase;
+}
+.main-menu-list a:hover {
+  color: #03a9f4;
+}
+
+main {
+  text-align: center;
+  margin-top: 106px;
+}
+section {
+  display: inline-block;
+  width: 420px;
+  margin-right: 60px;
+}
+
+.img-description {
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-family: "Ubuntu", Arial, Sans-serif;
+  line-height: 16.8px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 30 px;
+  line-height: 36px;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.main-content-part-text {
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+  margin-top: 57px;
+  margin-bottom: 70px;
+}
+button {
+  font-family: "Playfair Display" Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  background: #ffffff;
+  border: 1px, solid;
+  border-color: #626262;
+  height: 58px;
+  width: 162px;
+  box-shadow: none;
+}
