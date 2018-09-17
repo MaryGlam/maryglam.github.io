@@ -136,6 +136,7 @@ h2::after {
 .product-list img {
   width: 255px;
   height: 283px;
+  display: block;
 }
 
 .products-description {
