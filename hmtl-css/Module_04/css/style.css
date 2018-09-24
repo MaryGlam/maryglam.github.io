@@ -1,0 +1,295 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #555252;
+  letter-spacing: -0.020em;
+}
+
+.container {
+  width: 1113px;
+  margin: 0 auto;
+
+}
+
+.site-logo {
+  float: left;
+  margin-top: 39px;
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+
+}
+
+.site-logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+nav {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+
+
+a {
+  text-decoration: none;
+  color: #0f0101;
+}
+
+a:hover,
+a:focus {
+  color: #1abc9c;
+}
+
+nav li:not(:first-child) {
+
+}
+
+nav ul {
+  float:right;
+  width:468px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  float:left;
+  margin-top: 48px;
+}
+
+ nav li:nth-child(2){
+   margin-left: 34px;
+   margin-right:37px;
+ }
+
+
+ nav li:nth-child(4){
+  margin-left: 30px;
+  margin-right: 27px;
+}
+
+nav li:nth-child(6){
+  margin-left: 33px;
+  margin-right: 0px;
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* FEATURED PRODUCT SECTION */
+
+.featured-product h2 {
+  font-family: "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  margin-left: 327px;
+  margin-top: 101px;
+  letter-spacing: -0.020em; 
+}
+
+.featured-product h2::after {
+  content: "";
+  display: block;
+  width: 165px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin-top: 32px;
+  margin-bottom: 92px;
+  margin-left: 147px;
+}
+
+.product-list,
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-list li {
+  float: left;
+  width: 255px;
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.product-list li:hover .products-description {
+  background-color: #1abc9c;
+}
+
+.product-list li:hover .products-price {
+  background-color: #1abc9c;
+  opacity: 0.439;
+}
+
+.product-list li:not(:nth-child(4n)) {
+  margin-right: 31px;
+}
+
+.product-list li:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+
+.product-list img {
+  width: 255px;
+  height: 282px;
+  display: block;
+}
+
+.product-list p{
+  margin: 0;
+  padding-top: 5px;
+  height: 40px;
+  background-color: #323232;
+}
+
+.products-description {
+  float: left;
+  padding-left: 14px;
+  width: 201px;
+ 
+}
+
+.products-price {
+  float: right;
+  width: 54px;
+  text-align: center;
+  opacity: 0.439;
+}
+
+
+/* LATEST NEWS SECTION */
+
+.latest-news h2 {
+  font-family: "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  margin-left: 400px;
+  margin-top: 108px;
+  margin-bottom: 80px;
+letter-spacing: -0.020em;
+}
+
+.latest-news h2::after {
+  content: "";
+  display: block;
+  width: 163px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin-top: 31px;
+  margin-left: 69px;
+}
+
+.news-list-item {
+  float: left;
+  width: 350px;
+  padding-left:2px; 
+  margin-bottom: 80px;
+}
+
+.news-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.news-list .img-first{
+  width: 350px;
+  height: auto;
+  display: block;
+}
+
+.news-list img{
+  width: 347px;
+  height: auto;
+  display: block;
+}
+
+h3 {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 600;
+  width: 325px;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.020em;
+  margin-top:9px;
+  
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 135px;
+  height: 3px;
+  background-color: #1abc9c;
+  margin-top: 9px;
+  margin-bottom: 25px;
+}
+
+.news-list-item p {
+  margin: 0px;
+  letter-spacing: -0.020em;
+}
+
+button {
+  margin-top: 10px;
+  border:none;
+  width: 160px;
+  height: 51px;
+  border-radius: 3px;
+  background-color: #1abc9c;
+  cursor: pointer;
+  
+}
+
+.third-button p{
+padding-left: 10px;
+}
+
+.third-button p,
+.second-button p{
+  padding-bottom: 3px;
+}
+
+button p{
+  margin:0;
+  padding:0;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+ 
+
+
