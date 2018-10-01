@@ -89,9 +89,7 @@ img {
 .page-nav a:hover,
 .page-nav a:focus {
   color: #f38181;
-  border-bottom: rgba(243, 129, 129) solid 4px;
- 
-  
+  border-bottom: rgba(243, 129, 129) solid 4px; 
 }
 
 .main-menu a {
@@ -104,7 +102,6 @@ img {
 .section-wrapper {
   display: flex;
   flex-direction: column;
-  /* outline: black solid 1px; */
 }
 
 .section-title {
@@ -179,15 +176,6 @@ img {
   margin-bottom: 10px;
   padding: 0;
 }
-
-/* h3::before {
-  display: block;
-  content: "";
-  width: 32px;
-  height: 100%;
-  background-color: green;
-  background-image: url(../images/icons_sesrvice/icon-alarm.png);
-} */
 
 .service-list-item p {
   margin: 0;
@@ -281,63 +269,7 @@ img {
   left: -10px;
   box-shadow: 10px 10px rgb(149, 225, 211);
   transition: box-shadow 200ms linear;
-
 }
-/* 
-.team-list-item:hover .team-list-image{
-  position: absolute;
- 
-  z-index: 1;
-  flex-shrink: 0;
-  flex-grow: 0;
-} */
-
-.team-list-item:hover .overlay {
-  opacity: 1;
-}
-
-.team-list-item:hover .overlay-gradient {
-  opacity: 0.9;
-  z-index: 2;
-}
-
-.team-list-item:hover .social-list {
-  opacity: 1;
-  z-index: 3;
-}
-
-.team-list-item:first-child {
-  margin-left: 2px;
-}
-
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-list-image {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 380px;
-  height: 470px;
-  margin-bottom: 27px;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
-/* .overlay {
-  position: absolute;
-  background-color: rgb(149, 225, 211);
-  opacity: 0;
-  width: 380px;
-  height: 470px;
-  left: 0px;
-  top: 0px;
-  z-index: 0;
-  flex-grow: 0;
-  flex-shrink: 0;
-  transition: opacity 200ms linear;
-} */
 
 .overlay-gradient {
   position: absolute;
