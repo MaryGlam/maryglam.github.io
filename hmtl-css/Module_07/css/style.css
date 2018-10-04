@@ -1,0 +1,307 @@
+@import url(../css/fonts.css);
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+:: before,
+:: after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ul's STYLES */
+
+.main-menu,
+.services-list,
+.contactus-list,
+.contactus-input-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+}
+
+/* PAGE-HEADER */
+
+.page-header a {
+  display: block;
+  text-decoration: none;
+}
+
+.page-navigation {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 89px;
+  justify-content: space-between;
+}
+
+.site-logo {
+  color: #fed136;
+  font-size: 26px;
+  line-height: 41px;
+  letter-spacing: 1.7px;
+  font-family: "Wisdom-Script", arial, "sans serif";
+  font-size: 26px;
+  line-height: 34px;
+  padding-left: 7px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 485px;
+}
+
+.main-menu a {
+  text-transform: uppercase;
+  font-family: "Montserrat", arial, "sans serif";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  color: #222222;
+  letter-spacing: -0.1px;
+  padding-left: 5px;
+}
+
+.main-menu-item:hover .main-menu-link,
+.main-menu-item:focus .main-menu-link {
+  color: #fed136;
+}
+
+.section-title {
+  font-family: "Montserrat", arial, "sans serif";
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1.8px;
+  text-align: center;
+}
+
+.services .section-title {
+  color: #222222;
+  margin-bottom: 0;
+}
+
+.contact-us .section-title {
+  color: #ffffff;
+  padding-top: 86px;
+  text-align: center;
+  letter-spacing: -0.025em;
+  margin-bottom: 4px;
+}
+
+.section-subtitle {
+  font-family: "droid-serif", arial, "sans serif";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 10px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact-us .section-subtitle {
+  margin-bottom: 80px;
+}
+
+/* LIST OF SERVICES SECTION */
+
+.services-list {
+  display: flex;
+  margin-bottom: 118px;
+  justify-content: space-between;
+}
+
+.service-list-item {
+  width: 278px;
+}
+
+.service-item-title {
+  color: #222222;
+  text-transform: capitalize;
+  font-family: "Montserrat", arial, "sans serif";
+  font-size: 18px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.service-item-title::before {
+  display: block;
+  content: "";
+  width: 67px;
+  height: 67px;
+  border: 3px rgb(254, 209, 54) solid;
+  border-radius: 50%;
+  background-image: url(../img/icons/Icon-Basket.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 23px;
+}
+
+.service-item-title::before {
+  transform: translateX(140%);
+}
+
+.service-list-item:nth-child(2) .service-item-title::before {
+  background-image: url(../img/icons/Icon-Laptop.png);
+}
+
+.service-list-item:nth-child(3) .service-item-title::before {
+  background-image: url(../img/icons/Icon-Locked.png);
+}
+
+.service-list-item p {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
+/* CONTACT US SECTION */
+
+.contact-us {
+  background-color: rgb(34, 34, 34);
+  background-image: url(../img/Map_Image.png);
+  background-position: 109% 85%;
+  background-repeat: no-repeat;
+}
+
+/* FORM */
+
+.contactus-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactus-input-list {
+}
+
+input {
+  width: 452px;
+  height: 48px;
+  border: solid 1px rgb(204, 204, 204);
+  border-radius: 2px;
+}
+
+.contactus-input-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.contactus-input-item:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 452px;
+  height: 206px;
+  resize: none;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+
+.contactus-list,
+.contactus-input-list {
+  font-size: 14px;
+}
+
+input,
+textarea,
+.contactus-form input::placeholder,
+.contactus-form textarea::placeholder {
+  text-transform: uppercase;
+  font-family: "Montserrat", arial, "sans serif";
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(187, 187, 187);
+  letter-spacing: -0.55px;
+}
+
+.contactus-form input::placeholder {
+  transform: translate(4%, -1.5%);
+}
+
+.contactus-form textarea::placeholder {
+  padding-left: 20px;
+  padding-top: 12px;
+}
+
+.contactus-form input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+.input-email[type="email"]:valid,
+.input-name[type="text"]:valid,
+textarea:valid {
+  border-color: green;
+}
+
+.input-email[type="email"]:invalid,
+.input-name[type="text"]:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+.contactus-button {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 115px;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  width: 240px;
+  height: 64px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translatex(146%);
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
