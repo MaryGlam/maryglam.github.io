@@ -47,17 +47,20 @@ p {
 }
 
 /* PAGE-HEADER */
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 89px;
+}
 
 .page-header a {
-  display: block;
   text-decoration: none;
 }
 
 .page-navigation {
-  display: flex;
-  margin-top: 40px;
-  margin-bottom: 89px;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .site-logo {
