@@ -27,6 +27,7 @@ img {
   margin: 0 auto;
 }
 
+h1,
 h2,
 h3,
 p {
@@ -47,11 +48,11 @@ p {
 }
 
 /* PAGE-HEADER */
-.page-header{
+.page-header {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
-  padding-bottom: 89px;
+  padding-bottom: 94px;
 }
 
 .page-header a {
@@ -78,6 +79,7 @@ p {
   display: flex;
   justify-content: space-between;
   width: 485px;
+  padding-top: 5px;
 }
 
 .main-menu a {
@@ -99,7 +101,7 @@ p {
 .section-title {
   font-family: "Montserrat", arial, "sans serif";
   font-size: 40px;
-  line-height: 75px;
+  line-height: 67px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -1.8px;
@@ -113,7 +115,7 @@ p {
 
 .contact-us .section-title {
   color: #ffffff;
-  padding-top: 86px;
+  padding-top: 90px;
   text-align: center;
   letter-spacing: -0.025em;
   margin-bottom: 4px;
@@ -124,14 +126,14 @@ p {
   font-weight: 400;
   font-style: italic;
   font-size: 16px;
-  line-height: 10px;
+  line-height: 19px;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 76px;
 }
 
-.contact-us .section-subtitle {
+/* .contact-us .section-subtitle {
   margin-bottom: 80px;
-}
+} */
 
 /* LIST OF SERVICES SECTION */
 
@@ -152,10 +154,17 @@ p {
   font-size: 18px;
   letter-spacing: -0.05em;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
-.service-item-title::before {
+figure img {
+  margin: 0 auto;
+}
+
+figure {
+  padding-bottom: 22px;
+}
+/* .service-item-title::before {
   display: block;
   content: "";
   width: 67px;
@@ -166,6 +175,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 23px;
+  border-color: red;
 }
 
 .service-item-title::before {
@@ -178,7 +188,7 @@ p {
 
 .service-list-item:nth-child(3) .service-item-title::before {
   background-image: url(../img/icons/Icon-Locked.png);
-}
+} */
 
 .service-list-item p {
   font-size: 14px;
@@ -284,7 +294,7 @@ textarea:invalid {
   height: 64px;
   cursor: pointer;
   color: rgb(255, 255, 255);
-  font-family: "Montserrat";
+  font-family: "Montserrat", "roboto", arial, "sans serif";
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
