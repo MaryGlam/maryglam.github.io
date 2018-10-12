@@ -39,8 +39,8 @@ img {
 .page-header {
   display: flex;
   justify-content: space-between;
-  padding-top: 22px;
-  padding-bottom: 118px;
+  padding-top: 25px;
+  padding-bottom: 110px;
 }
 
 .page-nav {
@@ -61,6 +61,7 @@ img {
   align-self: center;
   flex-wrap: wrap;
   align-content: flex-end;
+  min-height: 30px;
 }
 
 .site-logo,
@@ -72,6 +73,7 @@ img {
   cursor: pointer;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #95e1d3;
+  border-bottom: transparent solid 4px;
   transition-property: color, border-bottom;
   transition-duration: 200ms;
   transition-timing-function: linear;
@@ -91,7 +93,7 @@ img {
 .page-nav a:hover,
 .page-nav a:focus {
   color: #f38181;
-  border-bottom: rgba(243, 129, 129) solid 4px;
+  border-bottom-color: rgba(243, 129, 129);
 }
 
 .main-menu a {
@@ -280,14 +282,15 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(0deg, rgb(252, 227, 138), #f38181);
+  background-image: linear-gradient(0deg, rgb(252, 227, 138, 0.5), #f38181);
   transition-property: color, opacity, background-image, top, left;
   transition-duration: 200ms;
   transition-timing-function: linear;
   opacity: 0;
+  z-index: 2;
 }
 
-.team-list-item:hover::after {
+.team-list-image:hover::after {
   opacity: 1;
 }
 
@@ -310,9 +313,8 @@ img {
   left: 0px;
   width: 380px;
   height: auto;
-  margin-bottom: 27px;
   flex-grow: 0;
-  flex-shrink: 0;
+  flex-shrink: 0;                        
 }
 
 .team .team-list-name {
@@ -323,7 +325,7 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 17px;
-  font-weight: 400px;
+  font-weight: 400;
   font-family: "Montserrat", "Arial", sans-serif;
   text-align: center;
 }
@@ -340,8 +342,8 @@ img {
 /* SOCIAL ICONS */
 .social-list {
   position: absolute;
-  top: 196px;
-  left: 68px;
+  top: 206px;
+  left: 78px;
   font-size: 14px;
   display: flex;
   justify-content: center;
