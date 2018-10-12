@@ -49,9 +49,8 @@ header {
 }
 
 .site-nav {
-  margin-bottom: 26px;
-  margin-left: 30px;
-  margin-right: 30px;
+  float: right;
+  margin: 3px 30px 0;
 }
 
 .site-logo {
@@ -79,7 +78,6 @@ header {
 .site-menu {
   float: right;
   margin-top: 8px;
-  margin-left: 564px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 11px;
@@ -292,7 +290,8 @@ nav li:nth-child(6) {
 
 
 .collection-item:hover .wrapper-hover {
-  opacity: 0.549;
+  opacity: 1;
+  background-color: rgb(0, 0, 0, 0.549);
 }
 
 .collection-item:hover .icons {
