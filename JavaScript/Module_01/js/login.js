@@ -8,18 +8,17 @@ const accessWelcomed='Добро пожаловать!'
 let userLogin;
 userLogin = prompt("Введите свой логин, пожалуйста:");
 
-
-if (userLogin !== null && userLogin === adminLogin) {
+if (userLogin === adminLogin) {
 let userPassword;
 userPassword = prompt("А теперь пароль:");
 if (userPassword === adminPassword) {
 alert(accessWelcomed);
-} else if (userPassword !== adminPassword && userPassword !== null) {
+} else if (userPassword !== adminPassword) {
 alert(accessDenied);
 } else {
 alert(accessCancelled);
 }
-} else if (userLogin !== adminLogin && userLogin !== null) {
+} else if (userLogin !== adminLogin) {
 alert(accessDenied);
 } else {
 alert(accessCancelled);
