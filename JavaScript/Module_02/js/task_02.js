@@ -9,7 +9,7 @@ let i;
 
 do {
   userPass = prompt("Введите свой пароль, пожалуйста:");
-  if (passwords.includes(userPass) === true) {
+  if (passwords.includes(userPass)) {
     alert(msgWelcome);
     break;
   } else {

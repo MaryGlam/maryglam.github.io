@@ -8,16 +8,20 @@ let total = 0;
 
 do {
   userInput = prompt(msgNumberEnter);
-  if (isNaN(userInput) === true) {
+  if (isNaN(userInput)) {
     alert(msgError);
     continue;
   }
 
-  number.push(userInput);
-  console.log(number);
+  number.push(+userInput);
 } while (userInput !== null);
 
-for (let item of number) {
-  total += Number(item);
+if (number.length !== 0){
+  for (let item of number) {
+    total += item;
+  }
+  alert(total);
+
 }
-alert(total);
+
+
