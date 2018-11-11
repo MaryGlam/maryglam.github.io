@@ -4,9 +4,9 @@ const placesSharm = 15;
 const placesHurgada = 25;
 const placesTaba = 6;
 const errorNotice = "Ошибка ввода!";
-const locSharm = "Шарм";
-const locHurgada = "Хургада";
-const locTaba = "Таба";
+const locSharm = "ШАРМ";
+const locHurgada = "ХУРГАДА";
+const locTaba = "ТАБА";
 const msgSorry = "Нам очень жаль, приходите еще!";
 const msgNoPlaces = "Извините, столько мест нет ни в одной группе!";
 const msgHappyTrip = "Приятного путешествия в ";
@@ -17,14 +17,14 @@ let userChoice;
 userPlaces = prompt("Сколько мест хотели бы забронировать?");
 console.log(userPlaces);
 
-userPlaces = Number(userPlaces);
+userPlaces = +userPlaces;
 
 console.log(userPlaces);
 
 if (userPlaces <= 0 || Number.parseInt(userPlaces) !== userPlaces) {
   alert(errorNotice);
 } else if (userPlaces <= placesTaba) {
-  userChoice = prompt(
+  toUpperCase(userChoice) = prompt(
     "Мы можем предложить вам поездку в Табу, Хургаду или Шарм. Куда бы вы хотели поехать? (Таба/Хургада/Шарм)"
   );
   switch (userChoice) {

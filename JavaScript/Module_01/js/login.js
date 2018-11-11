@@ -12,15 +12,15 @@ if (userLogin === adminLogin) {
 const userPassword = prompt("А теперь пароль:");
 if (userPassword === adminPassword) {
 alert(accessWelcomed);
-} else if (userPassword !== adminPassword && userPassword !==null) {
-alert(accessDenied);
-} else {
+} else if (userPassword === null) {
 alert(accessCancelled);
+} else {
+alert(accessDenied);
 }
-} else if (userLogin !== adminLogin && userLogin !== null) {
-alert(accessDenied);
-} else {
+} else if (userLogin === null) {
 alert(accessCancelled);
+} else {
+alert(accessDenied);
 }
 
 
